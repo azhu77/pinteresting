@@ -80,4 +80,7 @@ Rails.application.configure do
   #required for Heroku
   #note to set this to your host
   config.action_mailer.default_url_options = { :host => 'simplelocalorganic.com' }
+
+  Paperclip.options.merge!(:command_path => "/usr/bin") 
+  
 end
